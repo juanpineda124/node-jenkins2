@@ -19,7 +19,10 @@ services:
     build:
       context: ./balanceador
     ports:
-      - 4004:80
+      - "4004:80"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - PORT=4002
     networks:
       - proyectos-app
 
