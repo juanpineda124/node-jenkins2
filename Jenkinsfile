@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Clonar el repositorio'){
             steps{
-                git branch: 'main', credentialsId: 'git-jenkins', url: 'https://github.com/juanpineda124/node-jenkins2.git'
+                git branch: 'main', credentialsId: 'git-jenkins1', url: 'https://github.com/juanpineda124/node-jenkins2.git'
             }
         }
         stage('Contruir imagen Docker'){
